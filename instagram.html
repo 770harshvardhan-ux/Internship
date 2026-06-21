@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.instagram {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(
+        45deg,
+        #F58529
+        #FEDA77
+        #DD2A7B
+        #8134AF
+        #515BD4
+    );
+    border-radius: 40px;
+    position: relative;
+}
+.instagram::before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    border: 12px solid white;
+    border-radius: 30px;
+    position: absolute;
+    top: 28px;
+    left: 28px;
+}
+.instagram::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border: 12px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 65px;
+    left: 65px;
+}
+</style>
+</head>
+<body>
+<div class="instagram">
+    <div class="circle"></div>
+</div>
+</body>
+</html>
